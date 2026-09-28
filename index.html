@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Vibes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h1>✈️ Travel Vibes</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#europe">Europe</a></li>
+                <li><a href="#usa">USA</a></li>
+                <li><a href="#uk">UK</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div>
+            <h2>Explore The World 🌎</h2>
+
+            <p>
+                Discover beautiful places, travel tips and amazing
+                experiences from around the world.
+            </p>
+
+            <button onclick="scrollToBlogs()">
+                Explore Blogs
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <h2>Find Your Travel Story 🔍</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search destination..."
+            onkeyup="searchBlogs()"
+        >
+
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blogs">
+
+        <h2>Latest Travel Blogs</h2>
+
+        <div class="blog-container">
+
+
+            <!-- Europe -->
+            <article class="blog-card" data-name="europe paris">
+
+                <img
+                    src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+                    alt="Paris"
+                >
+
+                <div class="content">
+
+                    <span>🇪🇺 Europe</span>
+
+                    <h3>Beautiful Paris</h3>
+
+                    <p>
+                        Explore the Eiffel Tower, beautiful streets
+                        and delicious French food.
+                    </p>
+
+                    <button onclick="readMore('Paris')">
+                        Read More
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- USA -->
+            <article class="blog-card" data-name="usa new york">
+
+                <img
+                    src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee"
+                    alt="New York"
+                >
+
+                <div class="content">
+
+                    <span>🇺🇸 USA</span>
+
+                    <h3>New York City</h3>
+
+                    <p>
+                        Discover Times Square, Central Park and
+                        the amazing city life of New York.
+                    </p>
+
+                    <button onclick="readMore('New York')">
+                        Read More
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- UK -->
+            <article class="blog-card" data-name="uk london">
+
+                <img
+                    src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad"
+                    alt="London"
+                >
+
+                <div class="content">
+
+                    <span>🇬🇧 UK</span>
+
+                    <h3>London Adventure</h3>
+
+                    <p>
+                        Visit Big Ben, London Bridge and discover
+                        the beauty of the United Kingdom.
+                    </p>
+
+                    <button onclick="readMore('London')">
+                        Read More
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about">
+
+        <h2>About Travel Vibes</h2>
+
+        <p>
+            Travel Vibes is a simple travel blog created to share
+            beautiful destinations, travel experiences and helpful
+            travel tips.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Me 📧</h2>
+
+        <p>Email: travelvibes@example.com</p>
+
+        <button onclick="showMessage()">
+            Say Hello
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Travel Vibes | Made with ❤️ using HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
